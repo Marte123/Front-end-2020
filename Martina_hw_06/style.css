@@ -1,0 +1,194 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: flex-start; 
+}
+.red_box {
+    background-color: rgb(218, 86, 86);
+    height:300px;
+    width:40%;
+    display: inline block;
+    align-items: center;
+}
+.white_bar {
+    width: 140px;
+    height: 5px;
+    background-color: white;
+    left: 250px;
+    position: absolute;
+    margin-top: 100px;
+    animation: load_white 5s normal forwards infinite;
+  }
+  .white_bar2 {
+  width: 140px;
+  height: 5px;
+  background-color: white;
+  left: 250px;
+  position: absolute;
+  animation: load_white 5s normal forwards infinite;
+}
+.faded_bar {
+    width:140px;
+    background-color: rgba(255, 255, 255, 0.281);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin: auto;
+    align-items: center;
+    color: white;
+    position: relative;
+    padding: 0 5px;
+    margin-top: 105px;
+    margin-left: 250px;
+    display: flex;
+    height: 30px;
+  }
+@keyframes load_white {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 140px;
+  }
+}
+.more_red {
+  background-color: rgb(197, 28, 28);
+  height:300px;
+  width:40%;
+  display: inline-block;
+  align-items: center;
+}
+.fade_bar {
+  background: rgba(216, 160, 160, 0.425);
+  justify-content: flex-start;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+  color: white;
+  position: relative;
+  padding: 0 5px;
+  margin-top: 105px;
+  margin-left: 240px;
+  display: flex;
+  height: 30px;
+  width: 140px;
+  overflow: hidden;
+}
+
+.fill {
+  animation: load 3s normal forwards infinite;
+  background: #fff;
+  height: 30px;
+  width: 140px;
+  padding-top: 4px;
+}
+
+@keyframes load {
+  0% { 
+    width: 0; }
+  100% { 
+    width: 100%; }
+}
+.pair {
+  margin-top: 120px;
+  margin-left: 240px;
+}
+.more_red  .pair {
+    position: absolute;
+    width:80px;
+    height:30px;
+    vertical-align: middle;
+
+  }
+  .more_red  .pair .dot {
+    position: absolute;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:50%;
+   
+  }
+  .more_red  .pair .dot-2 {
+    right:0px;
+    background-color: rgba(255, 255, 255, 0.589);
+  }
+  .more_red  .pair-2 {
+    left:50px;
+  }
+  .more_red  .pair-1 {
+    animation:spin 1000ms ease-in-out infinite;
+  }
+  .more_red  .pair-2 {
+    animation:spin 1000ms ease-in-out infinite reverse;
+  }
+  .more_red .pair-1 .dot-1 {
+    opacity:0;
+    animation:hide 1000ms ease-in-out infinite reverse;
+  }
+  .more_red  .pair-2 .dot-2 {
+    opacity:0;
+    animation:hide 1000ms ease-in-out infinite;
+  }
+  @keyframes hide {
+    0%,49% {
+      opacity:0;
+    }
+    50%,100% {
+      opacity:1;
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform:rotate(0deg);
+    }
+    50%,100% {
+      transform:rotate(180deg);
+    }
+  }
+.circle {
+    width: 30px;
+    height: 30px;
+    background: white ;
+    position: relative;
+    animation: rotate 3s infinite;
+    animation-direction: reverse;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+  }
+  
+  @keyframes rotate {
+    0%   {background: rgb(255, 251, 251); left: -30px; top: -30px;}
+    25%  {background: rgba(238, 238, 237, 0.685); left: 100px; top: -30px;}
+    50%  {background: rgb(229, 229, 230); left: 100px; top: 100px;}
+    75%  {background: rgba(240, 241, 240, 0.753); left: -30px; top: 100px;}
+    100% {background: rgba(253, 250, 250, 0.705); left: -30px; top: -30px;}
+    
+  }
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    left: 270px;
+    position: relative;
+    margin-top: 100px;
+    animation: load_s 5s normal forwards infinite;
+  }
+  @keyframes load_s {
+    0% { 
+      width: 0; }
+    100% { 
+      width: 100px; }
+  }
+
+  @media screen and (max-width: 800px) {
+    .red_box, .more_red {
+      width: 100%; 
+    }
+  }
