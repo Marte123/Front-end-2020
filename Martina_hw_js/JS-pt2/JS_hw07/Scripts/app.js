@@ -1,12 +1,14 @@
 
 let amount = 1000;  
+
 checkAmount();
 
 function checkAmount() {
     alert('You have ' + amount + ' dollars on your bank account.');
-    requestMoney();
+   
 }
 
+requestMoney();
 
 function requestMoney() {
     let withdrawMoney = parseInt(prompt('How much money do you want to withdrawal?'));
