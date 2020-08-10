@@ -1,11 +1,18 @@
+let firstName = ["Gerard", "Robert", "Angelina"];
+let lastName = ["Butler", "Downey", "Jolie"];
+let orderNum =["1", "2", "3"];
+let result = [];
 
-/*let first = ["Gerard", "Robert", "Angelina"];
-let last = ["Butler", "Downey", "Jolie"];
-/*
-let a = new Array(); 
-for (let i = 0; i < first.length ; i++) {
-  a[i] = new Array()
-  for (let j = 0; j < last.length; j++) {
-    a[i][j] = '[' + i + ', ' + j + ']'
+function actors(num, first, last) {
+    for (i = 0; i < orderNum.length; i++){
+      result[i] = orderNum[i] + "." + firstName[i] + " " + lastName[i];
   }
 }
+actors (orderNum, firstName, lastName);
+
+for (i = 0; i < result.length; i++) {
+}
+console.log(result[i]);
+
+
+
