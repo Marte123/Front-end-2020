@@ -12,12 +12,13 @@ FullNameofActors (orderNum, firstName, lastName);
 
 for (i = 0; i < result.length; i++) {
 }
+//console.log(result[i]);
 
-function printFullName() {
+function printFullNames() {
   console.log(result.map(FullNameofActors));
 
 }
 
-printFullName();
+printFullNames();
 
 
