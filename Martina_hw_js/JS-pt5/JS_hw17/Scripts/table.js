@@ -20,7 +20,7 @@ function createTable(){
 }
 
 //function to delete the table
-function DeleteTable() {
+function deleteTable() {
     let deleteTable = document.getElementById('tableA');
     let parentEl = deleteTable.parentElement;
     parentEl.removeChild(deleteTable);
@@ -28,7 +28,7 @@ function DeleteTable() {
 
 //eventListeners
 document.getElementById("ClickToCreate").addEventListener("click", createTable);
-document.getElementById("ClickToErase").addEventListener("click", DeleteTable);
+document.getElementById("ClickToErase").addEventListener("click", deleteTable);
 
 
 function clearInputs() {
