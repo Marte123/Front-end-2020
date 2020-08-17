@@ -12,7 +12,7 @@ function createRecipe(rname) {
   function writeIngredients(){
     let numOfIng = prompt("How many ingredients does your recipe have?");
     let arrOfIng = [];
-    for(var i = 0; i < numOfIng; i++){
+    for(let i = 0; i < numOfIng; i++){
        arrOfIng.push(prompt("Enter the ingredient:"));
        let li = document.createElement("li");
        let ingredient = document.createTextNode(arrOfIng[i]);
