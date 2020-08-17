@@ -6,7 +6,6 @@ function createRecipe(rname) {
       document.getElementById("recipeName").innerHTML = `This is recipe for ${name}`;
     }
 }
-//createRecipe(name);
 
 //function for ingredients
   function writeIngredients(){
