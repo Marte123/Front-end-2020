@@ -7,9 +7,3 @@ clickBtn.addEventListener("click", function() {
     paragraphs.style.fontSize = "x-large"; 
 })
 
-
-/*function changeBackgroundColor() {
-    boxElement.style.backgroundColor = "red";
-}
-
-boxElement.onmouseover = changeBackgroundColor;  ?? dali mora da e traditional za da e imenuvana */
