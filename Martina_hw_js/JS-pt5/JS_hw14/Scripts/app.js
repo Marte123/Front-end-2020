@@ -4,8 +4,6 @@ let formResult = document.getElementById("formInfo");
 formBtn.addEventListener("click", function (event) {
     event.preventDefault();
 
-    console.log(event.target.value);
-
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
     let email = document.getElementById("email").value;
