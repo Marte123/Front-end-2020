@@ -1,0 +1,1 @@
+The font used in this design is Open Sans.
