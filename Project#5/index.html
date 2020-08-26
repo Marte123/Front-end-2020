@@ -10,26 +10,38 @@
 </head>
 <body>
     <div id="main">
-        <header>
-             <div id="background">
-                 <nav>
-                    <img src="images/logo.png" alt="munchak_logo" id="logo">
-                     <ul>
-                         <li><a  href="#" class="navanchor">Home</a></li>
-                         <li><a  href="#gocolumns" class="navanchor">Go hiking</a></li>
-                         <li><a  href="#aboutus" class="navanchor">About</a></li>
-                         <li><a class="active" href="#">Login</a></li>
-                     </ul>
-                </nav>
-           
-
+            <header>
+                <div id="background">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                            <img src="./images/logo.png" alt="Munchak_logo" class="logo">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#gocolumns">Go hiking</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#aboutus">About</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <img src="./images/sparkle-png-33329.png" class="shootingstar" id="star1">
+                    <div class="sky">
         <h1 class="header1">Let's get the top <br> of Mountain</h1>
+
+        <img src="./images/sparkle-png-33329.png" class="shootingstar" id="star2">
+
+        <img src="./images/sparkle-png-33329.png" class="shootingstar" id="star3">
+
         <h6 class="header6"> Here is the hiking information you need to decide<br>
             if it is right for you, and to make it more interesting,<br>
-            enjoyable and safe.
-        </h6>
-
+            enjoyable and safe. </h6>
+     
         <button class="button" id="getBtn">Get Started</button>
+    </div>
     </header>
     </div>
         <h3 id="header3">We envision a world where everyone <br>
@@ -68,9 +80,10 @@
 
             <h3 id="header3">With the support of our members and partners, we've <br>
             improved trail access for millions of people</h3>
+
         <div class="flexy" id="aboutus">
             <div class="column">
-                <p>We;ve Mobilized<br>
+                <p>We've Mobilized<br>
                 <p class="num">558,768</p><br> trail Volunteers</p>
               </div>
               <div class="column" >
@@ -200,7 +213,12 @@
             </div>
         </footer>
     </div>
-   
-    <script></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
